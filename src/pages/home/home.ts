@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { ANIMALES } from "../../data/data.animales";
 
 @Component({
   selector: 'page-home',
@@ -7,8 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  animales:any[] = []
 
+  constructor() {
+    this.animales = ANIMALES
   }
 
 }
